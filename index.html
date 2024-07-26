@@ -11,6 +11,11 @@
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Portfolio website</title>
+        <script>
+            function reloadPage() {
+                window.location.reload();
+            }
+        </script>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -25,6 +30,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Project</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                         <li class="nav__item"><a href="#relaxgame" class="nav__link">Relax Game</a></li>
@@ -42,6 +48,7 @@
             <section class="home bd-grid" id="home">
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">PhucAn</span><br> Web Designer</h1>
+                    <a href="Pham-Nguyen-Phuc-An-CV.pdf" class="button">View CV</a>
                     <a href="Pham-Nguyen-Phuc-An-CV.pdf" class="button" target="_blank" download>Download CV</a>
                 </div>
 
@@ -70,7 +77,7 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/avatar1.jpg" alt="">
+                        <img src="assets/img/avatar.jpg" alt="">
                     </div>
                     
                     <div>
@@ -143,6 +150,21 @@
                 </div>
             </section>
 
+            <!--===== EDUCATION =====-->
+            <section class="skills section" id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Software Engineer</h2>
+                        <p class="skills__text">As a Software Engineering student at Nguyen Tat Thanh University, I have gained essential skills for developing effective software systems. I’ve built a solid foundation in programming principles and data structures and learned to design and develop applications using languages like Java, C++, and Python. I’m also proficient in basic SQL for database management and web development with HTML, CSS, JavaScript, and PHP. Additionally, I’ve used project management tools like Git and Agile, tackled complex problems, and improved my teamwork and communication skills to meet industry demands.</p>
+                    </div>
+                    <div>              
+                        <img src="assets/img/NIIE.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
             <!--===== WORK =====-->
             <section class="work section" id="work">
                 <h2 class="section-title">Project</h2>
@@ -196,8 +218,8 @@
                         <input type="text" placeholder="Name" class="contact__input">
                         <input type="mail" placeholder="Email" class="contact__input">
                         <textarea name="" placeholder="Description" cols="0" rows="10" class="contact__input"></textarea>
-                        <a href="#"><input type="button" value="Submit" class="contact__button button"></a>
-                        
+                        <!-- <a href="#"><input type="button" value="Submit" class="contact__button button"></a> -->
+                        <input type="button" value="Submit" class="contact__button button" onclick="reloadPage()">
                     </form>
                 </div>
             </section>
