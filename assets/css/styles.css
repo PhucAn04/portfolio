@@ -370,15 +370,8 @@ img {
   cursor: pointer;
   margin-left: auto;
 }
-
-.map-container {
-  text-align: center;
-  margin-top: 50px;
-}
-.map-image {
-  width: 600px;
-  height: 300px;
-  border: 1px solid #ddd;
+.contact__container {
+  display: flex;
 }
 
 /* ===== FOOTER =====*/
