@@ -394,11 +394,8 @@ img {
   margin-left: auto;
 }
 
-.contact__container {
-  display: flex;
-}
-
-.map-container {
+/* .map-container {
+  display: block;
   text-align: center;
   margin-top: 50px;
 }
@@ -406,7 +403,7 @@ img {
   width: 600px;
   height: 300px;
   border: 1px solid #ddd;
-}
+} */
 
 /* ===== FOOTER =====*/
 .footer {
