@@ -351,35 +351,6 @@ img {
   transition: 0.5s ease;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-  opacity: 0;
-  transition: 0.5s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.work__img:hover img {
-  opacity: 0.7;
-}
-
-.work__img:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center;
-}
-
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
@@ -398,6 +369,16 @@ img {
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+}
+
+.map-container {
+  text-align: center;
+  margin-top: 50px;
+}
+.map-image {
+  width: 600px;
+  height: 300px;
+  border: 1px solid #ddd;
 }
 
 /* ===== FOOTER =====*/
