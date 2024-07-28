@@ -394,6 +394,9 @@ img {
   margin-left: auto;
 }
 
+.map__container {
+  text-align: center;
+}
 /* .map-container {
   display: block;
   text-align: center;
